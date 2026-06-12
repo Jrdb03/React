@@ -21,11 +21,11 @@ export const MyAwesomeApp = () => {
     }
 
     return (
-        <>
-            <h1>{firstName}</h1>
+        <div data-testid = "div-app">
+            <h1 data-testid="first-name-title">{firstName}</h1>
             <h3>{lasName}</h3>
 
-            <p>{favoriteGames.join(', ')}</p>
+            <p className="mi-clase-favorita">{favoriteGames.join(', ')}</p>
             <p>{2 + 2}</p>
 
             <h1>{isActive ? 'Yes' : 'No'}</h1>
@@ -36,9 +36,9 @@ export const MyAwesomeApp = () => {
 
             
             <p>{address.zipCode}, {address.country}</p>
-        </>
-    )
-}
+        </div>
+    );
+};
 
 // export function MyAwesomeApp() {
 //     return (
