@@ -18,7 +18,7 @@ describe('MyAwesomeApp', () => {
     test('should render firstName and lastName - screen', () => {
 
         render(<MyAwesomeApp />)
-        screen.debug();
+        // screen.debug();
 
         // const h1 = screen.getByRole('heading', {
         //     level: 1
