@@ -12,7 +12,6 @@ export interface GiphyGif {
     bitly_gif_url:              string;
     bitly_url:                  string;
     embed_url:                  string;
-    username:                   Name;
     source:                     string;
     title:                      string;
     rating:                     Rating;
@@ -97,31 +96,19 @@ export interface FixedHeight {
 export interface Looping {
 }
 
-export enum Rating {
-    G = "g",
-    PG = "pg",
-}
+export type Rating = 'G' | 'PG';
 
-export enum Type {
-    GIF = "gif",
-}
+export type Type = 'gif';
 
 export interface User {
     avatar_url:    string;
     banner_image:  string;
     banner_url:    string;
     profile_url:   string;
-    username:      Name;
-    display_name:  Name;
     description:   string;
     instagram_url: string;
     website_url:   string;
     is_verified:   boolean;
-}
-
-export enum Name {
-    AizenSosuke9641 = "aizen_sosuke9641",
-    Empty = "",
 }
 
 export interface Meta {
