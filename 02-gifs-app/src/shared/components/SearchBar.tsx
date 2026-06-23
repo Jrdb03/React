@@ -38,7 +38,7 @@ export const SearchBar = ({placeholder = 'Buscar', onQuery}: Props) => {
           onChange={ (event) => setQuery(event.target.value) }
           onKeyDown={handleKeyDown}
         />
-        <button>Buscar</button>
+        <button onClick={handleSearch}>Buscar</button>
     </div>
   )
 }
